@@ -50,8 +50,19 @@ $('.submit').click(function (){
 });
 
 // Try 5
-$('.shade').click(function() {
-  $(this).toggle( "slow", function() {
+$('.center-btn').click(function() {
+  $('.try5').siblings('.shade').toggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
+// Try 6
+$('.right').click(function() {
+  $('.try6').siblings('.shade').animate({
+  	opacity: 0.25,
+  	top: "-=50",
+  	height: "toggle"
+  }, 5000, function(){
     // Animation complete.
   });
 });

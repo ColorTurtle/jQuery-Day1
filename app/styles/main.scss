@@ -36,6 +36,7 @@
     position: relative;
     display: inline-block;
 
+    
     .shade {
       width: 250px;
       height: 150px;
@@ -53,9 +54,11 @@
         text-align: center;
         font-size: 35px;
         line-height: 40px;
+        margin-bottom: 5px;
       }
     }
 }
+
 
 .box-by-dan {
   top: 0;
@@ -137,8 +140,29 @@
     &.its-off {
       opacity: 0;
     }
+
+
   }
 
 // End box-by-dan
 }
 
+img.toggle-button {
+  height: 50px;
+}
+
+.row2 {
+  position: relative;
+}
+
+.row2 img {
+  position: absolute;
+  top: 85px;
+  left: 400px;
+}
+
+.right img.toggle-button {
+  position: absolute;
+  top: 85px;
+  left: 705px;
+}
