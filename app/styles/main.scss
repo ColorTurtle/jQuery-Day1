@@ -33,7 +33,28 @@
 .wrapper {
     width: 300px;
     height: 200px;
+    position: relative;
     display: inline-block;
+
+    .shade {
+      width: 250px;
+      height: 150px;
+      background: rgba(0, 0, 0, .85);
+      border-radius: 6px;
+      position: absolute;
+      top: 0;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      line-height: 0px;
+
+      h2 {
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
 }
 
 .box-by-dan {
@@ -95,8 +116,9 @@
   .rumbler {
     position: absolute;
     top: 0;
+    height: 70px;
     padding-top: 45px;
-    padding-left: 40px;
+    padding-left: 35px;
     opacity: 0;
     
     &.its-on {
@@ -110,13 +132,13 @@
     padding-left: 40px;
     font-size: 18px;
     color: rgb(243, 182, 182);
-    opacity: 1;
+    opacity: 0;
 
     &.its-off {
       opacity: 0;
     }
   }
 
-
-
+// End box-by-dan
 }
+

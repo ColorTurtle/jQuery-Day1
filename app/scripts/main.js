@@ -39,12 +39,19 @@ $('.try3').click(function(){
 });
 
 // Try 4
-$('.submit').focused(function (){
+$('.submit').click(function (){
 	console.log('focused on an input');
 
 	$('input').each(function(){
 		if($(this).val() == '') {
-			$('.submit').addClass('its-off');
+			$('.rumbler').addClass('its-on');
 		}
 	});
+});
+
+// Try 5
+$('.shade').click(function() {
+  $(this).toggle( "slow", function() {
+    // Animation complete.
+  });
 });
