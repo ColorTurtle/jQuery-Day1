@@ -78,7 +78,8 @@
   
   &.active {
     background: red;
-    color: black;
+    color: white;
+    font-size: 25px;
     @include transition(all 1.0s ease);
   }
 
@@ -89,9 +90,8 @@
     border-radius: 8px;
     top: -20px;
     left: -15px;
-    box-shadow: 4px 4px 5px black,
+    box-shadow: 8px 8px 15px black,
           inset 0px 0px 3px white;
-    
   }
 
   span {

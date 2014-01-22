@@ -79,4 +79,11 @@ $('.left').click(function() {
 });
 
 // Try 8 
+$('.try8').siblings('.shade').hover(function(){
+	console.log('You can do this!');
+
+	$('.try8').addClass('active');
+
+});
+
 
