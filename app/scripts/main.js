@@ -135,13 +135,19 @@ $('.try15').dblclick(function() {
 
 // Try16
 $('.try16').dblclick(function() {
-  $('.container').toggleClass('blackout');
+  $('.container').toggleClass('neon');
 });
 
 // Try17
-$('.box-by-dan.try17').dblclick(function() {
+$('.box-by-dan.try17').click(function() {
   $('.box-by-dan').toggleClass('light-it-up');
 });
+
+// Try18
+$('.box-by-dan.try18').hover(function() {
+  $('.container').toggleClass('blackout');
+});
+
 
 
 // example
