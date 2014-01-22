@@ -171,6 +171,48 @@ $('.try21').click(function() {
   });
 });
 
+// Try22 found at http://stackoverflow.com/questions/20947129/make-effect-only-on-hovered-element-in-jquery-same-classes
+$('.try22').mouseover(function() {
+  $(this).css({
+    'opacity': .75
+  });
+}).mouseout(function () {
+  $(this).css({
+    'opacity': 1
+  });
+});
+
+// Try23 
+$('.try23').mouseover(function() {
+  $('.box-by-dan').each(function() {
+    $( this ).addClass('fire-words2');
+  });
+}).mouseout(function () {
+  $('.box-by-dan').each(function() {
+    $('.box-by-dan').removeClass('fire-words2');
+  });
+});
+
+// Try24
+$('.box-by-dan.try24').mouseover(function() {
+  $('.box-by-dan').not(this).toggleClass('blue-steel');
+});
+
+// Try24
+
+
+// Example
+$('.box').mouseover(function (e) {
+    e.stopPropagation();
+    $(this).css({
+        'opacity': .25
+    });
+}).mouseout(function (e) {
+    e.stopPropagation();
+    $(this).css({
+        'opacity': 1
+    });
+});
 
 
 // example
