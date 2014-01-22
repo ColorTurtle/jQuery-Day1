@@ -3,7 +3,7 @@ var dogone = {
 	ears:2,
 	bark: function(){
 		console.log ('Woof!')
-	},
+	}
 }
 
 var dogtwo = {
@@ -11,7 +11,7 @@ var dogtwo = {
 	ears:2,
 	bark: function(){
 		console.warn ('Woof!')
-	},
+	}
 }
 
 var dog = {
@@ -21,6 +21,6 @@ var dog = {
 		console.error ('Woof!')
 	},
 	countEars: function(){
-		console.log('I have ' +this.ears 'ears. ');
+		console.log('I have ' +this.ears+ 'ears. ');
 	}
 }

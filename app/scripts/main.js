@@ -148,6 +148,29 @@ $('.box-by-dan.try18').hover(function() {
   $('.container').toggleClass('blackout');
 });
 
+// Try19
+$('.box-by-dan.try19').hover(function() {
+  $('.box-by-dan').not(this).toggleClass('light-it-up');
+});
+
+// Try20
+$('.try20').click(function() {
+  $('.box-by-dan').each(function() {
+    $( this ).toggleClass('fire-words');
+  });
+});
+
+// Try21 - from http://api.jquery.com/each/
+$('.try21').click(function() {
+  $('.box-by-dan').each(function( index, element ) {
+    // element == this
+    $(element).toggleClass('light-it-up');
+    if ( $( this ).is( '.try21' ) ) {
+      return false;
+    }
+  });
+});
+
 
 
 // example
