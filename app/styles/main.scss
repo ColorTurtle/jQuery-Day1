@@ -18,7 +18,6 @@
     background: red;
 
     @include transition(all 1.0s ease);
-
 }
 
 .box.active {
@@ -38,12 +37,86 @@
 }
 
 .box-by-dan {
-    width: 250px;
-    height: 150px;
-    background: gray;
-    border-radius: 6px;
-    color: white;
-    font-size: 20px;
-    line-height: 150px;
-    text-align: center;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 150px;
+  background: gray;
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  line-height: 150px;
+  text-align: center;
+  position: relative;
+  box-shadow: inset 0px 0px 5px black;
+  @include transition(all 1.0s ease);
+  
+  &.active {
+    background: red;
+    color: black;
+    @include transition(all 1.0s ease);
+  }
+
+  &.expand {
+    position: relative;
+    width: 280px;
+    height: 190px;
+    border-radius: 8px;
+    top: -20px;
+    left: -15px;
+    box-shadow: 4px 4px 5px black,
+          inset 0px 0px 3px white;
+    
+  }
+
+  span {
+    display: block;
+  }
+
+  input {
+    background: white;
+    width: 200px;
+    height: 40px;
+    color: rgb(140, 140, 140);
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0 1px 4px #484D5F;
+    font-size: 13px;
+    padding-left: 20px;
+  }
+
+  .input-query {
+    line-height: 0px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+  }
+
+  .rumbler {
+    position: absolute;
+    top: 0;
+    padding-top: 45px;
+    padding-left: 40px;
+    opacity: 0;
+    
+    &.its-on {
+      opacity: 1;
+    }
+  }
+  .submit {
+    position: absolute;
+    top: 0;
+    padding-top: 45px;
+    padding-left: 40px;
+    font-size: 18px;
+    color: rgb(243, 182, 182);
+    opacity: 1;
+
+    &.its-off {
+      opacity: 0;
+    }
+  }
+
+
+
 }
