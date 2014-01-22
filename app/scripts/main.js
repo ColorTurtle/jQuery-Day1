@@ -59,9 +59,9 @@ $('.center-btn').click(function() {
 // Try 6
 $('.right').click(function() {
   $('.try6').siblings('.shade').animate({
-  	opacity: 0.25,
-  	top: "-=50",
-  	height: "toggle"
+  	opacity: 1,
+  	right: "-=50",
+  	width: "toggle"
   }, 5000, function(){
     // Animation complete.
   });
