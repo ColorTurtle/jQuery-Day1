@@ -35,6 +35,7 @@
     height: 200px;
     position: relative;
     display: inline-block;
+    border-radius: 6px;
 
     
     .shade {
@@ -147,10 +148,7 @@
 // End box-by-dan
 }
 
-img.toggle-button {
-  height: 50px;
-}
-
+// row styling
 .row2 {
   position: relative;
 }
@@ -161,8 +159,33 @@ img.toggle-button {
   left: 400px;
 }
 
+.row3 {
+  position: relative;
+
+  .wrapper {
+    overflow: hidden;
+  }
+}
+
+// Toggle Button
+img.toggle-button {
+  height: 50px;
+}
+
+.center img.toggle-button {
+  position: absolute;
+  top: 85px;
+  left: 100px;  
+}
+
 .right img.toggle-button {
   position: absolute;
   top: 85px;
   left: 705px;
+}
+
+.left img.toggle-button {
+  position: absolute;
+  top: 90px;
+  left: 98px;
 }

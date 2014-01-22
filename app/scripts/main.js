@@ -66,3 +66,17 @@ $('.right').click(function() {
     // Animation complete.
   });
 });
+
+// Try 7
+$('.left').click(function() {
+  $('.try7').siblings('.shade').animate({
+  	opacity: 1,
+  	top: "-=50",
+  	height: "toggle"
+  }, 5000, function(){
+    // Animation complete.
+  });
+});
+
+// Try 8 
+
