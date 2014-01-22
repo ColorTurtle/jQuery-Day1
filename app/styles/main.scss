@@ -10,6 +10,11 @@
     }
 }
 
+h6 {
+  line-height: 0px;
+  margin-top: -40px;
+}
+
 .box    {
     width: 200px;
     height: 0px;
@@ -28,6 +33,18 @@
 .container {
     width: 960px;
     margin: 50px auto;
+
+    &.blackout {
+      background: black;
+
+      .box-by-dan {
+        box-shadow: 0px 0px 20px white;
+        border: 1px solid rgb(208, 184, 216);
+        background: rgb(73, 56, 75);
+        color: #F0E1F3;
+        text-shadow: 0 0px 4px rgb(221, 167, 228);
+      }
+    }
 }
 
 .wrapper {
@@ -92,6 +109,14 @@
     left: -15px;
     box-shadow: 8px 8px 15px black,
           inset 0px 0px 3px white;
+  }
+
+  &.light-it-up {
+    box-shadow: 0px 0px 70px yellow;
+background: rgb(238, 238, 93);
+color: rgb(42, 185, 94);
+border: 2px solid rgb(153, 221, 150);
+text-shadow: 5px 5px 10px white;
   }
 
   span {
@@ -165,6 +190,27 @@
   .wrapper {
     overflow: hidden;
   }
+}
+
+.row4 {
+  width: 980px;
+  height: 450px;
+  @include transition(all 1.0s ease);
+}
+
+// End row styling
+
+.try10 {
+  display: none;
+}
+
+.try13 span {
+  display: inline;
+}
+
+.try15.dbl {
+  background: yellow;
+  color: gray;
 }
 
 // Toggle Button
