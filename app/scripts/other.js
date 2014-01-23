@@ -51,9 +51,9 @@ var zombieFred = {
 	},
 
 // Couldn't get this one to work. Console kept saying 'interests not defined.'
-	// share:function(aVic){
-		// return 'Hi, my name is ' + name + '. I like' + interests + '. Call me maybe.'
-	// }
+	share:function(aVic){
+		return 'Hi, my name is ' + this.name + '. I like ' + this.interests[0] + ', ' + this.interests[1] + ' & ' + this.interests[2] + '. Call me maybe?'
+	}
 }
 
 var Blondie = {
@@ -65,7 +65,7 @@ var Blondie = {
 	interests: ["physics", "staying indoors", "barfing"],
 	nordicKill:function(aVic){
 		aVic.headless=true
-		return "F**k you zed head!"
+		return "Efff you zed head! I'm takin' you out!"
 	}
 
 }
@@ -79,7 +79,7 @@ var Mason = {
 
 	nordicKill:function(aVic){
 		aVic.headless=true
-		return "F**k you zed head!"
+		return "Efff you zed head! I'm takin' you out!"
 	}
 }
 
