@@ -21,6 +21,6 @@ var dog = {
 		console.error ('Woof!')
 	},
 	countEars: function(){
-		console.log('I have ' +this.ears+ 'ears. ');
+		console.log('I have ' +this.ears+ ' ears.');
 	}
 }
