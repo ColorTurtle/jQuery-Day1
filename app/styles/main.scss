@@ -25,6 +25,11 @@ h6 {
     @include transition(all 1.0s ease);
 }
 
+.student-container {
+  border: 1px solid green;
+  margin-top: 30px;
+}
+
 .box.active {
     height: 400px;
     padding: 20px;

@@ -50,9 +50,10 @@ var zombieFred = {
 		return "Ahhhhhhh!"
 	},
 
-	share:function(){
-		console.log('Hi, my name is ' +name+ ' and I love' +interests+ '. Gimme a holla.');
-	}
+// Couldn't get this one to work. Console kept saying 'interests not defined.'
+	// share:function(aVic){
+		// return 'Hi, my name is ' + name + '. I like' + interests + '. Call me maybe.'
+	// }
 }
 
 var Blondie = {
