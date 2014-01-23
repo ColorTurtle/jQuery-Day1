@@ -210,20 +210,56 @@ $('.try25 p').hover(
 
 
 // Try26
-
-// Example
-$('.box').mouseover(function (e) {
-    e.stopPropagation();
-    $(this).css({
-        'opacity': .25
-    });
-}).mouseout(function (e) {
-    e.stopPropagation();
-    $(this).css({
-        'opacity': 1
-    });
+// Example found at http://api.jquery.com/slideup/
+$('.try26').siblings('.shade').hover(function() {
+  $('.try26').siblings('.shade').slideUp( "slow", function() {
+    // Animation complete.
+  });
 });
 
+// Try27
+// Example found at http://api.jquery.com/slideup/
+$('.try27').siblings('.left').click(function() {
+  if ( $('.row8').find('.row8').is( ':hidden' ) ) {
+    $( '.row8' ).show( 'slow' );
+  } else {
+    $( '.row8' ).slideUp();
+  }
+});
+
+// Try28
+$('.try28').hover(function(){
+	$('span').fadeOut(100);
+  $('span').fadeIn(500);
+  $('p').fadeOut(100);
+  $('p').fadeIn(500);
+  $('span').fadeOut(100);
+  $('span').fadeIn(500);
+});
+
+// Try29
+$('.try29').hover(function(){
+	$(document.body).fadeOut(100);
+  $(document.body).fadeIn(500);
+  $(document.body).fadeOut(100);
+  $(document.body).fadeIn(500);
+  $(document.body).fadeOut(100);
+  $(document.body).fadeIn(500);
+});
+
+// Try29
+$('.try30').click(function(){
+	$('div').slideUp();
+});
+
+// Example
+
+// Example 
+$( "#clickme" ).click(function() {
+  $( "#book" ).slideUp( "slow", function() {
+    // Animation complete.
+  });
+});
 
 // example
 $( "li.fade" ).hover(function() {
