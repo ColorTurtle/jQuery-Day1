@@ -1,3 +1,4 @@
+// Start Examples from Class
 var dogone = {
 	legs:4,
 	ears:2,
@@ -24,7 +25,8 @@ var dog = {
 		console.log('I have ' +this.ears+ ' ears.');
 	}
 }
-
+// End Examples from Class
+// Begin zombie story
 var zombieFred = {
 	name: 'Fred',
 	legs:2,
