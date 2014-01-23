@@ -198,8 +198,18 @@ $('.box-by-dan.try24').mouseover(function() {
   $('.box-by-dan').not(this).toggleClass('blue-steel');
 });
 
-// Try24
+// Try25 using http://api.jquery.com/hover/
+$('.try25 p').hover(
+  function() {
+    $( this ).append( $('<span> ***</span>') );
+  }, function() {
+    $( this ).find("span:last").remove();
+  }
+);
 
+
+
+// Try26
 
 // Example
 $('.box').mouseover(function (e) {

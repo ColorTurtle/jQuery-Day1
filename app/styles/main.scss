@@ -156,6 +156,23 @@ h6 {
     display: block;
   }
 
+  p {
+    line-height: 8px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 15px;    
+    
+    &:first-child {
+      padding-top: 20px;
+    }
+
+    &.stars  {
+      color: red;
+    }
+
+  }
+
   input {
     background: white;
     width: 200px;
@@ -245,6 +262,10 @@ h6 {
 .try15.dbl {
   background: yellow;
   color: gray;
+}
+
+.try25 span {
+  color: red;
 }
 
 // Toggle Button
